@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+	
+  <Target Name="CopyDependencies" AfterTargets="Build">
+	  <Copy SourceFiles="$(SolutionDir)App2\bin\$(Configuration)\$(TargetFramework)\App2.dll" DestinationFolder="$(OutputPath)" />
+  </Target>
+	
+  <ItemGroup>
+    <ProjectReference Include="..\cecil\Mono.Cecil.csproj" />
+  </ItemGroup>
+
+</Project>
