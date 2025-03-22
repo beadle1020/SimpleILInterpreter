@@ -7,9 +7,9 @@ public class Test
 	}
 
 	public void Run()
-    {
-        Console.WriteLine("Run Print");
-    }
+	{
+		Console.WriteLine("Run Print");
+	}
 
 	public void Run2(int a)
 	{
